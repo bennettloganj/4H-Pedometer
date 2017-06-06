@@ -12,7 +12,7 @@ class DataEntryViewController: UIViewController {
 
     
     var stepArray: [Int] = []
-    var heightInches = 0
+    var heightInches = 0.0
     
     @IBOutlet weak var dayOneSteps: UITextField!
     @IBOutlet weak var dayTwoSteps: UITextField!
@@ -50,7 +50,7 @@ class DataEntryViewController: UIViewController {
         }
         if let text = height.text, !text.isEmpty
         {
-            heightInches = Int(text)!
+            heightInches = Double(text)!
         }
         
         
@@ -68,6 +68,22 @@ class DataEntryViewController: UIViewController {
         //tap.cancelsTouchesInView = false
         
         view.addGestureRecognizer(tap)
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        var sum = 0
+        for steps in stepArray {
+            sum += steps
+        }
+        
+        let average = sum / 5
+        let strideLength = heightInches * 0.414
+        if segue.identifier == "SegueToDistanceInfo" {
+            if let destination = segue.destination as? DistanceInfoViewController {
+                destination.strideLength = strideLength
+                destination.averageStepsPerDay = average
+            }
+        }
     }
     
     func dismissKeyboard() {
