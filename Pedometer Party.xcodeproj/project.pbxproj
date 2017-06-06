@@ -12,6 +12,9 @@
 		B93BD0D01EE7032500D065C5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B93BD0CE1EE7032500D065C5 /* Main.storyboard */; };
 		B93BD0D21EE7032500D065C5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B93BD0D11EE7032500D065C5 /* Assets.xcassets */; };
 		B93BD0D51EE7032500D065C5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B93BD0D31EE7032500D065C5 /* LaunchScreen.storyboard */; };
+		B93BD0DF1EE70A4A00D065C5 /* SFText-Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = B93BD0DC1EE70A4A00D065C5 /* SFText-Light.otf */; };
+		B93BD0E01EE70A4A00D065C5 /* SFText-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = B93BD0DD1EE70A4A00D065C5 /* SFText-Medium.otf */; };
+		B93BD0E11EE70A4A00D065C5 /* SFText-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = B93BD0DE1EE70A4A00D065C5 /* SFText-Regular.otf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +25,9 @@
 		B93BD0D11EE7032500D065C5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B93BD0D41EE7032500D065C5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B93BD0D61EE7032500D065C5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B93BD0DC1EE70A4A00D065C5 /* SFText-Light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SFText-Light.otf"; sourceTree = "<group>"; };
+		B93BD0DD1EE70A4A00D065C5 /* SFText-Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SFText-Medium.otf"; sourceTree = "<group>"; };
+		B93BD0DE1EE70A4A00D065C5 /* SFText-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SFText-Regular.otf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,8 +66,19 @@
 				B93BD0D11EE7032500D065C5 /* Assets.xcassets */,
 				B93BD0D31EE7032500D065C5 /* LaunchScreen.storyboard */,
 				B93BD0D61EE7032500D065C5 /* Info.plist */,
+				B93BD0E21EE70A5200D065C5 /* SupportingFIles */,
 			);
 			path = "Pedometer Party";
+			sourceTree = "<group>";
+		};
+		B93BD0E21EE70A5200D065C5 /* SupportingFIles */ = {
+			isa = PBXGroup;
+			children = (
+				B93BD0DC1EE70A4A00D065C5 /* SFText-Light.otf */,
+				B93BD0DD1EE70A4A00D065C5 /* SFText-Medium.otf */,
+				B93BD0DE1EE70A4A00D065C5 /* SFText-Regular.otf */,
+			);
+			name = SupportingFIles;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -124,8 +141,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B93BD0E11EE70A4A00D065C5 /* SFText-Regular.otf in Resources */,
 				B93BD0D51EE7032500D065C5 /* LaunchScreen.storyboard in Resources */,
+				B93BD0E01EE70A4A00D065C5 /* SFText-Medium.otf in Resources */,
 				B93BD0D21EE7032500D065C5 /* Assets.xcassets in Resources */,
+				B93BD0DF1EE70A4A00D065C5 /* SFText-Light.otf in Resources */,
 				B93BD0D01EE7032500D065C5 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
