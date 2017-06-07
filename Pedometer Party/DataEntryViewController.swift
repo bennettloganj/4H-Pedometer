@@ -24,37 +24,60 @@ class DataEntryViewController: UIViewController {
     
     @IBAction func calculateButton(_ sender: UIButton) {
         var count = 0
+        var isEmptyField = false
+        
         if let text = dayOneSteps.text, !text.isEmpty
         {
-            stepArray.append(Int(text)!)
-            count+=1
+            stepArray.insert(Int(text)!, at: count)
+            
         }
+        count+=1
         if let text = dayTwoSteps.text, !text.isEmpty
         {
-            stepArray.append(Int(text)!)
-            count+=1
+            stepArray.insert(Int(text)!, at: count)
+            
         }
+        count+=1
         if let text = dayThreeSteps.text, !text.isEmpty
         {
-            stepArray.append(Int(text)!)
+            stepArray.insert(Int(text)!, at: count)
             count+=1
         }
+        count+=1
         if let text = dayFourSteps.text, !text.isEmpty
         {
-            stepArray.append(Int(text)!)
+            stepArray.insert(Int(text)!, at: count)
             count+=1
         }
+        count+=1
         if let text = dayFiveSteps.text, !text.isEmpty
         {
-            stepArray.append(Int(text)!)
+            stepArray.insert(Int(text)!, at: count)
             count+=1
         }
+        count+=1
         if let text = height.text, !text.isEmpty
         {
             heightInches = Double(text)!
         }
         
-        self.performSegue(withIdentifier: "SegueToDistanceInfo", sender: self)
+        if heightInches == 0 {
+            
+            isEmptyField = true
+            
+            let alertController = UIAlertController(title: "Height Required", message: "Please enter your height in inches into the corresponding textfield", preferredStyle: .alert)
+            
+            let doneAction = UIAlertAction(title: "Ok", style: .default, handler: { (_)->Void in})
+            
+            alertController.addAction(doneAction)
+            
+            self.present(alertController, animated: true, completion: nil)
+        }
+        
+        
+        if !isEmptyField {
+            self.performSegue(withIdentifier: "SegueToDistanceInfo", sender: self)
+        }
     }
     
     
@@ -77,22 +100,25 @@ class DataEntryViewController: UIViewController {
             dayFiveSteps.text = String(stepArray[4])
             height.text = String(heightInches)
         }
+        stepArray = [0,0,0,0,0]
         
         view.addGestureRecognizer(tap)
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         var sum = 0
+        var stepCount = 0
         for steps in stepArray {
             sum += steps
+            if steps != 0{
+                stepCount+=1
+            }
         }
         
-        let average = sum / 5
+        let average = sum / stepCount
         let strideLength = heightInches * 0.414
         if segue.identifier == "SegueToDistanceInfo" {
             
-            
-            //destination is coming back nil
             let navController = segue.destination as? UINavigationController
             let destination = navController?.topViewController as? DistanceInfoViewController
             destination?.strideLength = strideLength

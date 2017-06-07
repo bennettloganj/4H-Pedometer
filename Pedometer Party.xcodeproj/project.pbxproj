@@ -62,13 +62,13 @@
 		B93BD0C91EE7032500D065C5 /* Pedometer Party */ = {
 			isa = PBXGroup;
 			children = (
-				B93BD0CA1EE7032500D065C5 /* AppDelegate.swift */,
-				B93BD0CC1EE7032500D065C5 /* DataEntryViewController.swift */,
 				B93BD0CE1EE7032500D065C5 /* Main.storyboard */,
+				B93BD0CC1EE7032500D065C5 /* DataEntryViewController.swift */,
 				B93BD0E31EE723E400D065C5 /* DistanceInfoViewController.swift */,
 				B93BD0D11EE7032500D065C5 /* Assets.xcassets */,
 				B93BD0D31EE7032500D065C5 /* LaunchScreen.storyboard */,
 				B93BD0D61EE7032500D065C5 /* Info.plist */,
+				B93BD0CA1EE7032500D065C5 /* AppDelegate.swift */,
 				B93BD0E21EE70A5200D065C5 /* SupportingFIles */,
 			);
 			path = "Pedometer Party";

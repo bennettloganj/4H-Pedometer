@@ -171,7 +171,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1296.8" y="777.66116941529242"/>
+            <point key="canvasLocation" x="743" y="778"/>
         </scene>
         <!--The Distance-->
         <scene sceneID="M16-pc-MVH">
@@ -335,7 +335,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2vt-kI-T67" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3184.8000000000002" y="775.86206896551732"/>
+            <point key="canvasLocation" x="2431" y="760"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="eFi-hV-tto">
@@ -353,7 +353,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="DSG-Jf-DRC" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="208.80000000000001" y="777.66116941529242"/>
+            <point key="canvasLocation" x="-239" y="778"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="MLt-wF-6F6">
@@ -371,13 +371,13 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="b1E-oe-ly7" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2245.5999999999999" y="775.86206896551732"/>
+            <point key="canvasLocation" x="1650" y="778"/>
         </scene>
     </scenes>
     <resources>
         <image name="Back" width="13" height="22"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="B4O-0k-26C"/>
+        <segue reference="csI-MU-iJC"/>
     </inferredMetricsTieBreakers>
 </document>
