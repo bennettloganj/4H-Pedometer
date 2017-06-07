@@ -31,13 +31,13 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="1000" text="Enter Your Data" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TBa-fM-8Bf">
-                                <rect key="frame" x="37" y="98" width="300" height="30"/>
+                                <rect key="frame" x="37" y="54" width="300" height="30"/>
                                 <fontDescription key="fontDescription" name="SFUIText-Medium" family="SF UI Text" pointSize="25"/>
                                 <color key="textColor" red="0.097973398864269257" green="0.59687656164169312" blue="0.30621811747550964" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <stackView opaque="NO" contentMode="scaleToFill" spacing="14" translatesAutoresizingMaskIntoConstraints="NO" id="iiP-jt-65f">
-                                <rect key="frame" x="45" y="154" width="248" height="264"/>
+                                <rect key="frame" x="45" y="110" width="248" height="264"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" alignment="bottom" spacing="13" translatesAutoresizingMaskIntoConstraints="NO" id="WTV-eo-A5P">
                                         <rect key="frame" x="0.0" y="0.0" width="142.5" height="264"/>
@@ -160,20 +160,20 @@
                     </view>
                     <navigationItem key="navigationItem" title="Pedometer Party" id="hxa-cq-UdC"/>
                     <connections>
-                        <outlet property="dayFiveSteps" destination="IYI-Ds-q5z" id="mhl-5S-SiW"/>
-                        <outlet property="dayFourSteps" destination="jB4-m0-tQN" id="nHo-q2-Rrl"/>
-                        <outlet property="dayOneSteps" destination="Xgd-99-IvB" id="DXF-yM-cW4"/>
-                        <outlet property="dayThreeSteps" destination="iN9-xB-AzN" id="vzC-Kj-eN7"/>
-                        <outlet property="dayTwoSteps" destination="fM8-Ma-C8n" id="eYy-F9-wWv"/>
-                        <outlet property="height" destination="Vcb-Bg-sLr" id="nnc-mv-XtB"/>
-                        <segue destination="uMF-Jd-66q" kind="show" identifier="SegueToDistanceInfo" id="j3W-mg-l7r"/>
+                        <outlet property="dayFiveSteps" destination="jB4-m0-tQN" id="ljd-5T-saM"/>
+                        <outlet property="dayFourSteps" destination="iN9-xB-AzN" id="W45-oP-eCs"/>
+                        <outlet property="dayOneSteps" destination="Vcb-Bg-sLr" id="Ha8-HF-V91"/>
+                        <outlet property="dayThreeSteps" destination="fM8-Ma-C8n" id="iiP-Ws-8V4"/>
+                        <outlet property="dayTwoSteps" destination="Xgd-99-IvB" id="D9m-15-9QV"/>
+                        <outlet property="height" destination="IYI-Ds-q5z" id="z2l-ZW-yDm"/>
+                        <segue destination="Xe4-d5-cRd" kind="showDetail" identifier="SegueToDistanceInfo" id="j3W-mg-l7r"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1296.8" y="777.66116941529242"/>
         </scene>
-        <!--Distance Info View Controller-->
+        <!--The Distance-->
         <scene sceneID="M16-pc-MVH">
             <objects>
                 <viewController id="uMF-Jd-66q" customClass="DistanceInfoViewController" customModule="Pedometer_Party" customModuleProvider="target" sceneMemberID="viewController">
@@ -184,12 +184,154 @@
                     <view key="view" contentMode="scaleToFill" id="VcP-dg-l24">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" translatesAutoresizingMaskIntoConstraints="NO" id="8cF-Su-qcl">
+                                <rect key="frame" x="72" y="95" width="231" height="58"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="How long will it take" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XVg-Up-T8U">
+                                        <rect key="frame" x="0.0" y="0.0" width="231" height="29"/>
+                                        <fontDescription key="fontDescription" name="SFUIText-Medium" family="SF UI Text" pointSize="24"/>
+                                        <color key="textColor" red="0.096405871212482452" green="0.595009446144104" blue="0.30598142743110657" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="to get there?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KNE-fz-omo">
+                                        <rect key="frame" x="0.0" y="29" width="231" height="29"/>
+                                        <fontDescription key="fontDescription" name="SFUIText-Medium" family="SF UI Text" pointSize="24"/>
+                                        <color key="textColor" red="0.096405871209999994" green="0.59500944609999995" blue="0.30598142740000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="7lh-Tq-y7y">
+                                <rect key="frame" x="9" y="185" width="360" height="207.5"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" alignment="bottom" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="S4Q-m5-kuU">
+                                        <rect key="frame" x="0.0" y="0.0" width="227" height="207.5"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="The Moon:" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jzU-tb-M8s">
+                                                <rect key="frame" x="87.5" y="0.0" width="139.5" height="33.5"/>
+                                                <fontDescription key="fontDescription" name="SFUIText-Light" family="SF UI Text" pointSize="28"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Disneyworld:" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ve2-8l-cEv">
+                                                <rect key="frame" x="59" y="43.5" width="168" height="33.5"/>
+                                                <fontDescription key="fontDescription" name="SFUIText-Light" family="SF UI Text" pointSize="28"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Old Hickory Dam:" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="i9s-eX-qCK">
+                                                <rect key="frame" x="0.0" y="87" width="227" height="33.5"/>
+                                                <fontDescription key="fontDescription" name="SFUIText-Light" family="SF UI Text" pointSize="28"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="TSU:" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Tfk-he-Yvt">
+                                                <rect key="frame" x="163" y="130.5" width="64" height="33.5"/>
+                                                <fontDescription key="fontDescription" name="SFUIText-Light" family="SF UI Text" pointSize="28"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Kentucky:" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LKl-OJ-XdY">
+                                                <rect key="frame" x="98" y="174" width="129" height="33.5"/>
+                                                <fontDescription key="fontDescription" name="SFUIText-Light" family="SF UI Text" pointSize="28"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="227" id="cNY-Fo-ayU"/>
+                                        </constraints>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" alignment="top" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="Le2-am-q11">
+                                        <rect key="frame" x="237" y="0.0" width="123" height="207.5"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0000000" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GDw-lT-jQH">
+                                                <rect key="frame" x="0.0" y="0.0" width="123" height="33.5"/>
+                                                <fontDescription key="fontDescription" name="SFUIText-Light" family="SF UI Text" pointSize="28"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0000000" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0GH-cG-FuV">
+                                                <rect key="frame" x="0.0" y="43.5" width="123" height="33.5"/>
+                                                <fontDescription key="fontDescription" name="SFUIText-Light" family="SF UI Text" pointSize="28"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0000000" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RAL-FF-oXd">
+                                                <rect key="frame" x="0.0" y="87" width="123" height="33.5"/>
+                                                <fontDescription key="fontDescription" name="SFUIText-Light" family="SF UI Text" pointSize="28"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0000000" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SFe-H5-yAi">
+                                                <rect key="frame" x="0.0" y="130.5" width="123" height="33.5"/>
+                                                <fontDescription key="fontDescription" name="SFUIText-Light" family="SF UI Text" pointSize="28"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0000000" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9bs-zd-4Lc">
+                                                <rect key="frame" x="0.0" y="174" width="123" height="33.5"/>
+                                                <fontDescription key="fontDescription" name="SFUIText-Light" family="SF UI Text" pointSize="28"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="123" id="DaI-oY-rY3"/>
+                                        </constraints>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                            <button opaque="NO" alpha="0.89999997615814209" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lte-WP-rDR">
+                                <rect key="frame" x="37" y="559" width="300" height="50"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="z4z-m0-kEa"/>
+                                </constraints>
+                                <state key="normal" title="Start Over">
+                                    <color key="titleColor" red="0.21806329490000001" green="0.64597934479999997" blue="0.39030784369999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="calculateButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Zae-2x-25y"/>
+                                    <action selector="startOverButton:" destination="uMF-Jd-66q" eventType="touchUpInside" id="bMI-tO-UoQ"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.86940139532089233" green="0.94196790456771851" blue="0.89736849069595337" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="lte-WP-rDR" firstAttribute="top" secondItem="7lh-Tq-y7y" secondAttribute="bottom" constant="166.5" id="01L-sD-fuM"/>
+                            <constraint firstItem="7lh-Tq-y7y" firstAttribute="leading" secondItem="VcP-dg-l24" secondAttribute="leading" constant="9" id="4FA-Eo-k1P"/>
+                            <constraint firstItem="8cF-Su-qcl" firstAttribute="top" secondItem="2TZ-OK-lfF" secondAttribute="bottom" constant="31" id="4nN-p9-4kf"/>
+                            <constraint firstItem="8cF-Su-qcl" firstAttribute="leading" secondItem="VcP-dg-l24" secondAttribute="leadingMargin" constant="56" id="8kB-8O-ucH"/>
+                            <constraint firstItem="lte-WP-rDR" firstAttribute="leading" secondItem="VcP-dg-l24" secondAttribute="leadingMargin" constant="21" id="ANg-CF-JgM"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="8cF-Su-qcl" secondAttribute="trailing" constant="56" id="Mcf-oT-sGP"/>
+                            <constraint firstAttribute="trailing" secondItem="7lh-Tq-y7y" secondAttribute="trailing" constant="6" id="OrI-9l-iuf"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="lte-WP-rDR" secondAttribute="trailing" constant="22" id="REA-ah-fRs"/>
+                            <constraint firstItem="7lh-Tq-y7y" firstAttribute="top" secondItem="8cF-Su-qcl" secondAttribute="bottom" constant="32" id="bEt-X1-CiG"/>
+                            <constraint firstItem="HT4-Je-nSc" firstAttribute="top" secondItem="lte-WP-rDR" secondAttribute="bottom" constant="58" id="f9L-3p-Ojl"/>
+                        </constraints>
                     </view>
+                    <navigationItem key="navigationItem" title="The Distance" id="k3j-Fo-rQA">
+                        <barButtonItem key="leftBarButtonItem" image="Back" id="SY9-2d-FBl">
+                            <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <connections>
+                                <segue destination="BYZ-38-t0r" kind="showDetail" id="feZ-uC-Xtp"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="KentuckyDistanceLabel" destination="9bs-zd-4Lc" id="reM-RK-1mf"/>
+                        <outlet property="TSUDistanceLabel" destination="SFe-H5-yAi" id="JVj-09-amM"/>
+                        <outlet property="damDistanceLabel" destination="RAL-FF-oXd" id="pMQ-cQ-Eje"/>
+                        <outlet property="disneyDistanceLabel" destination="0GH-cG-FuV" id="R4X-HT-aPd"/>
+                        <outlet property="moonDistanceLabel" destination="GDw-lT-jQH" id="kuZ-Kc-bxY"/>
+                        <segue destination="BYZ-38-t0r" kind="showDetail" identifier="StartOverSegue" id="B4O-0k-26C"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2vt-kI-T67" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2247" y="776"/>
+            <point key="canvasLocation" x="3184.8000000000002" y="775.86206896551732"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="eFi-hV-tto">
@@ -209,5 +351,29 @@
             </objects>
             <point key="canvasLocation" x="208.80000000000001" y="777.66116941529242"/>
         </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="MLt-wF-6F6">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Xe4-d5-cRd" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="RP0-8p-dU9">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="uMF-Jd-66q" kind="relationship" relationship="rootViewController" id="hWa-Gi-UpL"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="b1E-oe-ly7" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2245.5999999999999" y="775.86206896551732"/>
+        </scene>
     </scenes>
+    <resources>
+        <image name="Back" width="13" height="22"/>
+    </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="B4O-0k-26C"/>
+    </inferredMetricsTieBreakers>
 </document>

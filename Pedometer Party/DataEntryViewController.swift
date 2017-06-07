@@ -21,6 +21,7 @@ class DataEntryViewController: UIViewController {
     @IBOutlet weak var dayFiveSteps: UITextField!
     @IBOutlet weak var height: UITextField!
     
+    
     @IBAction func calculateButton(_ sender: UIButton) {
         var count = 0
         if let text = dayOneSteps.text, !text.isEmpty
@@ -53,7 +54,7 @@ class DataEntryViewController: UIViewController {
             heightInches = Double(text)!
         }
         
-        
+        self.performSegue(withIdentifier: "SegueToDistanceInfo", sender: self)
     }
     
     
@@ -79,10 +80,14 @@ class DataEntryViewController: UIViewController {
         let average = sum / 5
         let strideLength = heightInches * 0.414
         if segue.identifier == "SegueToDistanceInfo" {
-            if let destination = segue.destination as? DistanceInfoViewController {
-                destination.strideLength = strideLength
-                destination.averageStepsPerDay = average
-            }
+            
+            
+            //destination is coming back nil
+            let navController = segue.destination as? UINavigationController
+            let destination = navController?.topViewController as? DistanceInfoViewController
+            destination?.strideLength = strideLength
+            destination?.averageStepsPerDay = average
+            
         }
     }
     
