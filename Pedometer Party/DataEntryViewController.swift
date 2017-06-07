@@ -68,6 +68,16 @@ class DataEntryViewController: UIViewController {
         //Uncomment the line below if you want the tap not not interfere and cancel other interactions.
         //tap.cancelsTouchesInView = false
         
+        
+        if !stepArray.isEmpty {
+            dayOneSteps.text = String(stepArray[0])
+            dayTwoSteps.text = String(stepArray[1])
+            dayThreeSteps.text = String(stepArray[2])
+            dayFourSteps.text = String(stepArray[3])
+            dayFiveSteps.text = String(stepArray[4])
+            height.text = String(heightInches)
+        }
+        
         view.addGestureRecognizer(tap)
     }
     
@@ -87,6 +97,8 @@ class DataEntryViewController: UIViewController {
             let destination = navController?.topViewController as? DistanceInfoViewController
             destination?.strideLength = strideLength
             destination?.averageStepsPerDay = average
+            destination?.stepArray = stepArray
+            destination?.height = Int(heightInches)
             
         }
     }

@@ -246,31 +246,31 @@
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" alignment="top" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="Le2-am-q11">
                                         <rect key="frame" x="237" y="0.0" width="123" height="207.5"/>
                                         <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0000000" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GDw-lT-jQH">
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0000000" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GDw-lT-jQH">
                                                 <rect key="frame" x="0.0" y="0.0" width="123" height="33.5"/>
                                                 <fontDescription key="fontDescription" name="SFUIText-Light" family="SF UI Text" pointSize="28"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0000000" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0GH-cG-FuV">
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0000000" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0GH-cG-FuV">
                                                 <rect key="frame" x="0.0" y="43.5" width="123" height="33.5"/>
                                                 <fontDescription key="fontDescription" name="SFUIText-Light" family="SF UI Text" pointSize="28"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0000000" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RAL-FF-oXd">
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0000000" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RAL-FF-oXd">
                                                 <rect key="frame" x="0.0" y="87" width="123" height="33.5"/>
                                                 <fontDescription key="fontDescription" name="SFUIText-Light" family="SF UI Text" pointSize="28"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0000000" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SFe-H5-yAi">
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0000000" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SFe-H5-yAi">
                                                 <rect key="frame" x="0.0" y="130.5" width="123" height="33.5"/>
                                                 <fontDescription key="fontDescription" name="SFUIText-Light" family="SF UI Text" pointSize="28"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0000000" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9bs-zd-4Lc">
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0000000" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9bs-zd-4Lc">
                                                 <rect key="frame" x="0.0" y="174" width="123" height="33.5"/>
                                                 <fontDescription key="fontDescription" name="SFUIText-Light" family="SF UI Text" pointSize="28"/>
                                                 <nil key="textColor"/>
@@ -308,7 +308,6 @@
                             <constraint firstAttribute="trailingMargin" secondItem="8cF-Su-qcl" secondAttribute="trailing" constant="56" id="Mcf-oT-sGP"/>
                             <constraint firstAttribute="trailing" secondItem="7lh-Tq-y7y" secondAttribute="trailing" constant="6" id="OrI-9l-iuf"/>
                             <constraint firstAttribute="trailingMargin" secondItem="lte-WP-rDR" secondAttribute="trailing" constant="22" id="REA-ah-fRs"/>
-                            <constraint firstItem="7lh-Tq-y7y" firstAttribute="top" secondItem="8cF-Su-qcl" secondAttribute="bottom" constant="32" id="bEt-X1-CiG"/>
                             <constraint firstItem="HT4-Je-nSc" firstAttribute="top" secondItem="lte-WP-rDR" secondAttribute="bottom" constant="58" id="f9L-3p-Ojl"/>
                         </constraints>
                     </view>
@@ -316,7 +315,8 @@
                         <barButtonItem key="leftBarButtonItem" image="Back" id="SY9-2d-FBl">
                             <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             <connections>
-                                <segue destination="BYZ-38-t0r" kind="showDetail" id="feZ-uC-Xtp"/>
+                                <action selector="backButton:" destination="uMF-Jd-66q" id="tHl-FI-u7Z"/>
+                                <segue destination="BYZ-38-t0r" kind="showDetail" identifier="BackButtonSegue" id="feZ-uC-Xtp"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -374,6 +374,6 @@
         <image name="Back" width="13" height="22"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="B4O-0k-26C"/>
+        <segue reference="feZ-uC-Xtp"/>
     </inferredMetricsTieBreakers>
 </document>
