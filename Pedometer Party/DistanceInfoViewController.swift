@@ -41,34 +41,34 @@ class DistanceInfoViewController: UIViewController {
         
         var daysToTravel = round(10*(MoonDistanceInches/inchesPerDay)/10)
         let yearsToTravel = daysToTravel/365.0
-        let years = Int(floor(yearsToTravel))
+        let years = floor(yearsToTravel)
         let remainingMonths = (yearsToTravel*10).truncatingRemainder(dividingBy: 10)
-        let month = Int((remainingMonths/10) * 12)
-        moonDistanceLabel.text = "\(years)y \(month)m"
+        let month = (remainingMonths/10) * 12
+        moonDistanceLabel.text = "\(Int(years))y \(Int(month))m"
         
         daysToTravel = Double(Double(DisneyDistanceInches)/inchesPerDay)
-        var days = Int(floor(daysToTravel))
+        var days = floor(daysToTravel)
         var remainingHours = (daysToTravel*10).truncatingRemainder(dividingBy: 10)
-        var hours = Int((remainingHours/10) * 24)
-        disneyDistanceLabel.text = "\(days)d \(hours)h"
+        var hours = (remainingHours/10) * 24
+        disneyDistanceLabel.text = "\(Int(days))d \(Int(hours))h"
         
         daysToTravel = Double(Double(DamDistanceInches)/inchesPerDay)
-        days = Int(floor(daysToTravel))
+        days = floor(daysToTravel)
         remainingHours = (daysToTravel*10).truncatingRemainder(dividingBy: 10)
-        hours = Int((remainingHours/10) * 24)
-        damDistanceLabel.text = "\(days)d \(hours)h"
+        hours = (remainingHours/10) * 24
+        damDistanceLabel.text = "\(Int(days))d \(Int(hours))h"
         
         daysToTravel = Double(Double(TSUDistanceInches)/inchesPerDay)
-        days = Int(floor(daysToTravel))
+        days = floor(daysToTravel)
         remainingHours = (daysToTravel*10).truncatingRemainder(dividingBy: 10)
-        hours = Int((remainingHours/10) * 24)
-        TSUDistanceLabel.text = "\(days)d \(hours)h"
+        hours = (remainingHours/10) * 24
+        TSUDistanceLabel.text = "\(Int(days))d \(Int(hours))h"
         
         daysToTravel = Double(Double(KentuckyDistanceInches)/inchesPerDay)
-        days = Int(floor(daysToTravel))
+        days = floor(daysToTravel)
         remainingHours = (daysToTravel*10).truncatingRemainder(dividingBy: 10)
-        hours = Int((remainingHours/10) * 24)
-        KentuckyDistanceLabel.text = "\(days)d \(hours)h"
+        hours = (remainingHours/10) * 24
+        KentuckyDistanceLabel.text = "\(Int(days))d \(Int(hours))h"
         
     }
 
