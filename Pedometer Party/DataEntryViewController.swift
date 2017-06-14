@@ -41,19 +41,19 @@ class DataEntryViewController: UIViewController {
         if let text = dayThreeSteps.text, !text.isEmpty
         {
             stepArray.insert(Int(text)!, at: count)
-            count+=1
+          
         }
         count+=1
         if let text = dayFourSteps.text, !text.isEmpty
         {
             stepArray.insert(Int(text)!, at: count)
-            count+=1
+           
         }
         count+=1
         if let text = dayFiveSteps.text, !text.isEmpty
         {
             stepArray.insert(Int(text)!, at: count)
-            count+=1
+           
         }
         count+=1
         if let text = height.text, !text.isEmpty

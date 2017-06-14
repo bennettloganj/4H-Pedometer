@@ -116,7 +116,7 @@
 				TargetAttributes = {
 					B93BD0C61EE7032500D065C5 = {
 						CreatedOnToolsVersion = 8.3.2;
-						DevelopmentTeam = F59NDUXW9A;
+						DevelopmentTeam = X5HF3YHA25;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -287,11 +287,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = F59NDUXW9A;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = X5HF3YHA25;
 				INFOPLIST_FILE = "Pedometer Party/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.LunarLincoln.Pedometer-Party";
+				PRODUCT_BUNDLE_IDENTIFIER = com.LunarLincoln.PedometerParty2;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -300,11 +303,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = F59NDUXW9A;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = X5HF3YHA25;
 				INFOPLIST_FILE = "Pedometer Party/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.LunarLincoln.Pedometer-Party";
+				PRODUCT_BUNDLE_IDENTIFIER = com.LunarLincoln.PedometerParty2;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
